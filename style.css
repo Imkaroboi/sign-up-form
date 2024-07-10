@@ -1,3 +1,14 @@
 .container {
-    background-color: black;
+
+}
+.left {
+    background: url(images/treeimage.jpg);
+    background-size: contain;
+    width: 37vw;
+    height: 100vh;
+    display: flex;
+}
+.logocontainer img {
+    width: 10vw;
+    display: flex;
 }
