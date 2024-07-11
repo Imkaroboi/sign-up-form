@@ -31,3 +31,19 @@ display: flex;
     margin-left: 20px;
     margin-top: 130px;
 }
+.top-row{
+    display: flex;
+    flex-direction: row;
+}
+.middle-row {
+    display: flex;
+    flex-direction: row;
+}
+.bottom-row {
+    display: flex;
+    flex-direction: row;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
