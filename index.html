@@ -20,42 +20,48 @@
                     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                         Sign up now to get started.</p>
                 </div>
-                <form action="GET"></form>
+                <form action="index.html" method="get">
                 <div class="midsection">
                     
                         <div class="title">
-                        <p>Sign up Form</p>
+                        <p id="signuptitle">Sign up Form</p>
                         </div>
                         <div class="top-row">
                         <div>
                         <label for="Firstname">First name</label>
-                        <input name="Firstname" id="Firstname">
+                        <input name="Firstname" id="Firstname" placeholder="John">
                         </div>
                         <div>
                             <label for="Lastname">Last Name</label>
-                            <input id="Lastname" name="Lastname">
+                            <input id="Lastname" name="Lastname" placeholder="Doe">
                         </div>
                         </div>
                         <div class="middle-row">
                             <div>
                                 <label for="email">Email</label>
-                                <input id="email" name="email">
+                                <input id="email" name="email" type="email" placeholder="Johndoe@email.com">
                             </div>
                             <div>
                                 <label for="phone-number">Phone Number</label>
-                                <input id="phone-number" name="phone-number">
+                                <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
                             </div>
                         </div>
                         <div class="bottom-row">
                             <div>
                                 <label for="pass">Password</label>
-                                <input id="pass" name="pass">
+                                <input id="pass" name="pass" type="password">
                             </div>
                             <div>
                                 <label for="confirm-pass">Confirm password</label>
-                                <input id="confirm-pass" name="confirm-pass">
+                                <input id="confirm-pass" name="confirm-pass" type="password">
                             </div>
                         </div>
+                </div>
+                <div class="bottom-section">
+                    <button onclick="validation()" type="submit">Create Account</button>
+                    <div>
+                        <span>Already have an account? <a>Sign in</a></span>
+                    </div>
                 </div>
             </form>
             </div>
