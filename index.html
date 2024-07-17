@@ -17,7 +17,7 @@
         <div class="right">
             <div class="content">
                 <div class="header">
-                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <p style="font-family:'Times New Roman', Times, serif">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                         Sign up now to get started.</p>
                 </div>
                 <form action="index.html" method="get">
@@ -26,41 +26,41 @@
                         <div class="title">
                         <p id="signuptitle">Sign up Form</p>
                         </div>
-                        <div class="top-row">
+                        <div class="top-row rows">
                         <div>
                         <label for="Firstname">First name</label>
-                        <input name="Firstname" id="Firstname" placeholder="John">
+                        <input name="Firstname" id="Firstname" placeholder="John" required>
                         </div>
                         <div>
                             <label for="Lastname">Last Name</label>
-                            <input id="Lastname" name="Lastname" placeholder="Doe">
+                            <input id="Lastname" name="Lastname" placeholder="Doe" required>
                         </div>
                         </div>
-                        <div class="middle-row">
+                        <div class="middle-row rows">
                             <div>
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" placeholder="Johndoe@email.com">
+                                <input id="email" name="email" type="email" placeholder="Johndoe@email.com" required>
                             </div>
                             <div>
                                 <label for="phone-number">Phone Number</label>
-                                <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+                                <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
                             </div>
                         </div>
-                        <div class="bottom-row">
+                        <div class="bottom-row rows">
                             <div>
                                 <label for="pass">Password</label>
-                                <input id="pass" name="pass" type="password">
+                                <input id="pass" name="pass" type="password" required>
                             </div>
                             <div>
                                 <label for="confirm-pass">Confirm password</label>
-                                <input id="confirm-pass" name="confirm-pass" type="password">
+                                <input id="confirm-pass" name="confirm-pass" type="password" required>
                             </div>
                         </div>
                 </div>
                 <div class="bottom-section">
-                    <button onclick="validation()" type="submit">Create Account</button>
+                    <button onclick="validation()" type="submit" id="submitButton">Create Account</button>
                     <div>
-                        <span>Already have an account? <a>Sign in</a></span>
+                        <span>Already have an account? <span class="text" onclick="location.reload()">Sign in</span></span>
                     </div>
                 </div>
             </form>
