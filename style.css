@@ -30,7 +30,7 @@ display: flex;
     color: black;
     font-size: 30px;
     margin-left: 20px;
-    margin-top: 110px;
+    margin-top: 150px;
 }
 .top-row{
     display: flex;
@@ -66,9 +66,9 @@ font-size: 1.3rem;
     margin-top: 30px;
 }
 .midsection {
-    box-shadow: 0px 5px 60px,
-    0px -3px 90px;
-    margin-top: 15%;
+    box-shadow: 0px 1px 30px lightgray,
+    0px -3px 90px gray;
+    margin-top: 3%;
     padding-bottom: 100px;
 }
 form div {
@@ -94,6 +94,10 @@ form div {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 2%;
+    cursor: pointer;
+}
+#submitButton:hover {
+    background-color: rgb(89, 129, 72)
 }
 .text {
     color: #596D48;
